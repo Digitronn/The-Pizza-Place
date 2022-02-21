@@ -1,0 +1,66 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+header,
+main,
+footer {
+  border: 1px solid black;
+  display: grid;
+  place-items: center;
+}
+
+header {
+  height: 30vh;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 6rem;
+  text-transform: capitalize;
+  color: white;
+  background-color: red;
+}
+
+main {
+  height: 60vh;
+}
+
+footer {
+  height: 10vh;
+}
+
+.todo-card {
+  display: flex;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+  min-width: 500px;
+  height: 150px;
+  align-items: center;
+  gap: 10px;
+  margin: 20px;
+}
+
+.todo-details {
+  flex-grow: 1;
+}
+
+.todo-title {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.todo-img {
+  width: 30%;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  height: 120px;
+  background-image: url(//source.unsplash.com/120x120/?pizza);
+}
